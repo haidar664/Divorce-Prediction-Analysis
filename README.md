@@ -1,12 +1,12 @@
 Divorce Prediction Analysis
-Project Overview
+- Project Overview
 
 This project analyzes the key factors that predict divorce using a dataset of 5,000 couples containing demographic, psychological, relational, and behavioral variables. The study applies Exploratory Data Analysis (EDA), Principal Component Analysis (PCA), and Logistic Regression to identify the most influential predictors of divorce and to test statistically meaningful hypotheses.
 
 The primary research question is:
 Which factors—such as communication, financial stress, trust, and infidelity—most strongly predict the likelihood of divorce?
 
-Dataset
+- Dataset
 
 Size: 5,000 couples
 
@@ -24,7 +24,7 @@ Behavioral: infidelity, domestic violence history, counseling attendance
 
 Marital background: marriage type, religious compatibility, pre-marital cohabitation
 
-Methodology
+- Methodology
 
 Data Preprocessing
 
@@ -34,7 +34,7 @@ Feature scaling using StandardScaler
 
 Separation of predictors and target variable
 
-Exploratory Data Analysis (EDA)
+- Exploratory Data Analysis (EDA)
 
 Distribution analysis of numerical and categorical variables
 
@@ -42,7 +42,7 @@ Correlation heatmaps
 
 Boxplots comparing predictors by divorce status
 
-Principal Component Analysis (PCA)
+- Principal Component Analysis (PCA)
 
 Dimensionality reduction to address multicollinearity
 
@@ -50,7 +50,7 @@ Retained 23 components explaining ~86% of total variance
 
 Identification of dominant latent factors
 
-Logistic Regression
+- Logistic Regression
 
 Applied to PCA-transformed data
 
@@ -58,7 +58,7 @@ Evaluation using accuracy, precision, recall, and confusion matrix
 
 Hypothesis testing using coefficients, p-values, and odds ratios
 
-Key Findings
+- Key Findings
 
 Strongest predictors of divorce:
 
@@ -78,7 +78,7 @@ PCA revealed latent dimensions related to relationship instability, psychosocial
 
 The logistic regression model achieved ~60% accuracy but showed limited recall for divorced cases due to class imbalance.
 
-Limitations
+- Limitations
 
 Imbalanced dataset (more non-divorced than divorced couples)
 
@@ -88,21 +88,33 @@ Cross-sectional data (no temporal dynamics)
 
 Potential cultural and societal bias
 
-Repository Structure
+- Repository Structure
+  
 ├── data/
+
 │   └── divorce_df.csv
+
 ├── notebooks/
+
 │   └── DivorcePredictionModel.ipynb
+
 ├── figures/
+
 │   ├── correlation_heatmap.png
+
 │   ├── boxplots.png
+
 │   ├── pca_heatmap.png
+
 │   ├── confusion_matrix.png
+
 ├── report/
+
 │   ├── Divorce_Prediction_Analysis_Report.pdf
+
 ├── README.md
 
-Technologies Used
+- Technologies Used
 
 Python
 
@@ -116,9 +128,9 @@ matplotlib
 
 seaborn
 
-LaTeX (for report formatting)
+- LaTeX (for report formatting)
 
 
-Author
+- Author
 
 Haidar Saleh
